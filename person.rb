@@ -11,7 +11,7 @@ class Person
 
   def list_books
   if books.empty?
-    "Sorry, you haven't borrowed any book"
+    "Sorry, you havent borrowed any book"
   else
     books.map {|key, book| book.pretty_string}.join("\n")
   end
