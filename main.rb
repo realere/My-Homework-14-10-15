@@ -38,7 +38,6 @@ until response == 0
       when 5
         lend_book(library)
       when 6
-        # TODO: return book
         return_book(library)
       when 7
         # TODO: list borrowed books

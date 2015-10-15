@@ -15,10 +15,18 @@ def lend(person_name, book_title)
   person.borrow(book)
   
 end
+
+def person(person_name)
+  person = library.people[person_name]
+  book = books.delete(book_title)
+end
+
 def recieve_book(person_name, book_title)
-  #person = people[person_name]
-  person=library.people[person_name]
-  book = books.return(book_title)
+  #
+  person = library.people[person_name]
+  book = books.return_book(book_title)
+  
+  person.return(book)
 end
 def add_person(person)
   people[person.name] = person

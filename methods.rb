@@ -12,20 +12,35 @@ def lend_book(library)
   library.lend(person_name, book_title)
   
 end
+def person(library)
+  person.list_books
+  #person = library.person(person_name)
+
+  person = library.people[person_name]
+  
+end
 
 def return_book(library)
-  puts person.list_books
+  puts list_people(library)
   puts
   print"Which person will like to return a book (by name): "
+  person_name = gets.chomp
+  print person_name
+  #person.return(library, book_title)
+  #person = library.person(person_name)
+  #puts person.list_books
+
+  person = library.people[person_name]
+  print person.list_books
+  puts
+  print "Which book will you like to return (by name): "
   book_title = gets.chomp
 
-  puts
-  puts library.list_people
-  print "Which person is going to borrow it (by name): "
-  person_name = gets.chomp
+  
 
-  library.lend(person_name, book_title)
-
+  #library.lend(person_name, book_title)
+  
+end
 #def return_book(library)
   #puts list_people(library)
   #puts
