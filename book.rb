@@ -10,4 +10,6 @@ class Book
   def pretty_string
     "#{title} #{genre}" 
   end
+
+  
 end
