@@ -10,7 +10,7 @@ def lend_book(library)
   person_name = gets.chomp
 
   library.lend(person_name, book_title)
-  
+  print "Successful!!!"
 end
 def person(library)
   person.list_books
@@ -25,10 +25,6 @@ def return_book(library)
   puts
   print"Which person will like to return a book (by name): "
   person_name = gets.chomp
-  #print person_name
-  #person.return(library, book_title)
-  #person = library.person(person_name)
-  #puts person.list_books
 
   person = library.people[person_name]
   print person.list_books
@@ -36,25 +32,11 @@ def return_book(library)
   print "Which book will you like to return (by name): "
   book_title = gets.chomp
 
-  
-
   person.return(library, book_title)
   
 end
-#def return_book(library)
-  #puts list_people(library)
-  #puts
-  #print"Which person will like to return a book(by name): "
-  #person_name =gets.chomp
   
- # puts
-  #puts person.list_books
-  #puts
-  #print "Which book do you want to return(by name): "
-  #book_title = gets.chomp
 
-  #person.return(library, book_title)
-#end
 def list_people(library)
   puts library.list_people 
 end

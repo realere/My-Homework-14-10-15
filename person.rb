@@ -8,7 +8,14 @@ class Person
   def borrow(book)
     books[book.title] = book
   end
-
+  
+   def return(book, library)
+   book = books[book.title].delete
+   book = books.delete(book_title, library)
+   
+   
+  
+end
   def list_books
   if books.empty?
     "Sorry, you havent borrowed any book"

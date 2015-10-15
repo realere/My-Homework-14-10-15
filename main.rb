@@ -44,7 +44,7 @@ until response == 0
       else
         puts "invalid option"
     end
-
+    puts
     puts "press enter to continue"
     gets
 
